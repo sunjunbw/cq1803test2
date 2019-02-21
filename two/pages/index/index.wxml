@@ -1,0 +1,14 @@
+<!-- canvas.wxml -->
+<import src="./item.wxml" />
+<view bindtap="change">
+ {{msg}} {{n}}  {{k}}
+</view>
+<switch bindchange='change2'></switch>
+<view wx:for="{{arr}}" wx:key="index" wx:if="{{flag}}" class="row">
+   <template is="item" data="{{...item,index}}"></template>
+</view>
+已经完成{{count}}项目
+<input bindinput='input' bindconfirm='ok' value='{{str}}'></input>{{str}}
+<view wx:for="{{arr1}}">
+  {{item.positionName}}
+</view>

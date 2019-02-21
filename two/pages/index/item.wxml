@@ -1,0 +1,9 @@
+<template name="item">
+
+<checkbox-group bindchange="checkboxChange" data-index="{{index}}">
+    <checkbox value="{{flag}}" checked="{{flag}}" />
+</checkbox-group>
+   
+   {{index}} {{text}}
+   <button bindtap="del" data-index="{{index}}">delete</button>
+</template>
